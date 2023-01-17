@@ -1,10 +1,17 @@
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-<script type="module">
+<div id="app">
+	<h1>{{home}}</h1>
+</div>
+
+<script>
+	const { createApp } =Vue
 	
 	createApp({ 
 		data(){
-			return home="Home"
+			return {
+                            homek"Home"
+                            }
 			}
 		}).mount("#app")
 </script>
