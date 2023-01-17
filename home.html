@@ -1,9 +1,10 @@
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
 <script type="module">
-	import { createApp } from 'vue'
 	
 	createApp({ 
+		data(){
+			return home="Home"
+			}
 		}).mount("#app")
 </script>
-<div id="app">
-	<h1>home</h1>
-</div>
