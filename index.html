@@ -1,12 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contatos2</title>
+    <!--script src="https://unpkg.com/vue@3/dist/vue.global.js"></!--script-->
+    <!--script src="SRC/app.js" defer></!--script-->
+    <link rel="stylesheet" href="style.css">
+    <title>Contato</title>
 </head>
 <body>
+    <!--div id="app"-->
+        <section>
+            <h2>Contato</h2>
+            <form action="http://api.staticforms.xyz/submit" method="post">
+                
+                <label>Nome</label>
+                <input type="text" name="name" placeholder="Digite seu nome" required >
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Digite seu E-mail" required >
+                <label>Mensagem</label>
+                <textarea name="message" cols="30" rows="10" placeholder="Digite a mensagem" required ></textarea>
+                <buttom type="submit">Enviar</buttom>
+
+                <input type="hidden" name="accesKey" value="917fa936-a05b-4e8d-bee1-224a05eba40c">
+                <input type="hidden" name="redirectTo" value="file:///C:/Users/55199/Documents/EMPRESA/Site/Obrigado.html">
+
+                
+                <!--input type="text" v-model="input_name" placeholder ="Type your name:">  
+                <input type="submit" value="Enviar" v-on:click="submitForm"-->
+                 
+            </form>
+        </section>
+        
+        <!--p>Texo de {{ name }}</p-->
+        <!--p>Data binding:{{input_name}}</!p-->
     
+    <!--/div-->
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://wa.me/5519981606802?text=Gostaria%20de%20um%20orçamento." style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#f5f5f5;color:#1d1d2e;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+      z-index:1000;" target="_blank">
+    <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+    </a>
+
 </body>
 </html>
